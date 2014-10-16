@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Product
 	{
 	private String name;
-	private int[] price;
+	static int[] price;
 	
 
 	public Product(String n, int[] p)
