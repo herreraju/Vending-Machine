@@ -3,11 +3,10 @@ public class ProductManager
 	static int quantity;
 	static boolean vendItem = true;
 	static String product;
-
-	public ProductManager(int[] p, int q)
+	public ProductManager(String pr, int q)
 		{
 		q = quantity;
-		p = Product.price;
+		pr = product;
 		}
 
 	public int getQuantity()
@@ -17,10 +16,8 @@ public class ProductManager
 
 	public static void incrementItemCode()
 		{
-		for (int i = 0; i <= 10; i++)
-			{
-			
-			}
+		while()
+
 		}
 	public static boolean vendItem() 
 		{
@@ -30,7 +27,23 @@ public class ProductManager
 			}
 		else 
 			{
+			quantity--;
 			return true;
 			}
+		}
+	public static boolean isInStock()
+	{
+	if(quantity > 0)
+		{
+		return true;
+		}
+	else
+		{
+		return false;
+		}
+	}
+	public void getProduct()
+		{
+		
 		}
 	}
